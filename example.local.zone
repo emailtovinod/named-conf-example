@@ -1,0 +1,27 @@
+$TTL 1D
+@	IN SOA	  lapserver1.example.local.  root.example.local. (
+					1003	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+
+	NS	lapserver1.example.local.
+	A	127.0.0.1
+	AAAA	::1
+
+lapserver1  IN   A    10.0.0.180
+vmh1	            IN  A   10.0.0.5
+vmh2	            IN  A   10.0.0.6
+vc                  IN  A   10.0.0.15
+lab-ad              IN  A   10.0.0.50
+p-esxi-0            IN  A   192.168.0.11
+p-esxi-1            IN  A   10.0.0.211
+p-esxi-2            IN  A   10.0.0.212
+p-esxi-3            IN  A   10.0.0.213
+pacific-vc          IN  A   10.0.0.200
+pacific-nsx         IN  A   10.0.0.201
+pacific-edge-1      IN  A   10.0.0.215
+pacific-edge2       IN  A   192.168.70.101
+foo                 IN  A   192.168.81.4
+haproxy-lb          IN  A   10.0.0.216

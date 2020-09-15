@@ -1,0 +1,24 @@
+$TTL 8600
+@	IN SOA	 lapserver1.example.local.  root.example.local. (
+					1001	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	NS	lapserver1.example.local.
+	A	127.0.0.1
+	AAAA	::1
+180   IN   PTR   lapserver1.example.local.
+190   IN   PTR   master.example.local.
+5     IN   PTR   vmh1.example.local.
+215   IN   PTR   pacific-edge-1.example.local.
+15    IN   PTR   vc.example.local.
+50    IN   PTR   lab-ad.example.local.
+11    IN   PTR   p-esxi-0.example.local.
+211   IN   PTR   p-esxi-1.example.local.
+212   IN   PTR   p-esxi-2.example.local.
+213   IN   PTR   p-esxi-3.example.local.
+200   IN   PTR   pacific-vc.example.local.
+201   IN   PTR   pacific-nsx.example.local.
+150   IN   PTR   ad1.cn-org.local.
+216   IN   PTR   haproxy-lb
